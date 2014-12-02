@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	<!-- Generated 18.3.2010 10:51:45 by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+	<class name="net.suteren.jlibre.model.BookMetainfo" table="BOOKMETAINFO">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+		<many-to-one name="authors" class="net.suteren.jlibre.model.Authors"
+			fetch="join">
+			<column name="AUTHORS" />
+		</many-to-one>
+		<many-to-one name="author" class="net.suteren.jlibre.model.Author"
+			fetch="join">
+			<column name="AUTHOR" />
+		</many-to-one>
+		<property name="title" type="java.lang.String">
+			<column name="TITLE" />
+		</property>
+		<many-to-one name="rating" class="net.suteren.jlibre.model.Rating"
+			fetch="join">
+			<column name="RATING" />
+		</many-to-one>
+		<property name="isbn" type="java.lang.String">
+			<column name="ISBN" />
+		</property>
+		<property name="series" type="java.lang.String">
+			<column name="SERIES" />
+		</property>
+		<property name="seriesNumber" type="java.lang.Integer">
+			<column name="SERIESNUMBER" />
+		</property>
+		<many-to-one name="publisher" class="net.suteren.jlibre.model.Publisher"
+			fetch="join">
+			<column name="PUBLISHER" />
+		</many-to-one>
+		<property name="description" type="java.lang.String">
+			<column name="DESCRIPTION" />
+		</property>
+	</class>
+</hibernate-mapping>

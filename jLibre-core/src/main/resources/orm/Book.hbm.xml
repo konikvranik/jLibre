@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	<!-- Generated 18.3.2010 10:51:45 by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+	<class name="net.suteren.jlibre.model.Book" table="BOOK">
+		<id name="id" type="int" column="ID">
+			<generator class="increment" />
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="NAME" />
+		</property>
+		<many-to-one name="metaInfo" class="net.suteren.jlibre.model.BookMetainfo"
+			fetch="join">
+			<column name="METAINFO" />
+		</many-to-one>
+		<many-to-one name="cover" class="net.suteren.jlibre.model.Cover"
+			fetch="join">
+			<column name="COVER" />
+		</many-to-one>
+		<property name="url" type="java.net.URL">
+			<column name="URL" />
+		</property>
+		<many-to-one name="format" class="net.suteren.jlibre.model.BookFormat"
+			fetch="join">
+			<column name="FORMAT" />
+		</many-to-one>
+	</class>
+</hibernate-mapping>

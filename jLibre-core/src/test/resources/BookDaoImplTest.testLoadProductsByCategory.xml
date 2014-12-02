@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+	<BOOK NAME="John" />
+	<BOOK NAME="Jane" />
+	<BOOK NAME="Jim" />
+</dataset>
