@@ -1,0 +1,41 @@
+allprojects  {
+  apply plugin: 'maven'
+
+  group = 'net.suteren.jlibre'
+version = '0.0.1-SNAPSHOT'
+}
+
+subprojects {
+  apply plugin: 'java'
+  sourceCompatibility = 1.5
+  targetCompatibility = 1.5
+
+  
+  repositories {
+    mavenLocal()
+    
+    maven { url "file://c:/Users/Petr/android-sdks/extras/android/m2repository" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+  }
+
+  
+  dependencies {
+    compile group: 'org.springframework', name: 'spring', version:'2.5.5'
+    compile group: 'junit', name: 'junit', version:'4.8.1'
+    compile group: 'org.slf4j', name: 'slf4j-api', version:'1.5.11'
+    compile group: 'log4j', name: 'log4j', version:'1.2.15'
+    compile group: 'org.unitils', name: 'unitils', version:'3.1'
+    compile group: 'org.unitils', name: 'unitils-spring', version:'3.1'
+    compile group: 'org.unitils', name: 'unitils-core', version:'3.1'
+    compile group: 'org.unitils', name: 'unitils-dbunit', version:'3.1'
+    compile group: 'commons-dbcp', name: 'commons-dbcp', version:'20030825.184428'
+    compile group: 'commons-pool', name: 'commons-pool', version:'20030825.183949'
+    compile group: 'org.springframework', name: 'spring-beans', version:'3.0.1.RELEASE'
+    compile group: 'org.unitils', name: 'unitils-orm', version:'3.1'
+    compile group: 'org.hibernate', name: 'hibernate-annotations', version:'3.4.0.GA'
+    compile group: 'org.unitils', name: 'unitils-database', version:'3.1'
+    compile group: 'org.unitils', name: 'unitils-dbmaintainer', version:'3.1'
+}
+
+  
+}

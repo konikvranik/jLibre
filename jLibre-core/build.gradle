@@ -1,0 +1,12 @@
+
+description = ''
+dependencies {
+    compile group: 'javax.persistence', name: 'persistence-api', version:'1.0'
+    compile group: 'javax.transaction', name: 'jta', version:'1.1'
+    compile group: 'org.springframework', name: 'spring-orm', version:'2.5.5'
+    compile group: 'org.hibernate', name: 'hibernate-core', version:'3.3.2.GA'
+    compile group: 'org.hsqldb', name: 'hsqldb', version:'1.8.0.10'
+    compile group: 'javassist', name: 'javassist', version:'3.4.GA'
+    compile group: 'org.apache.derby', name: 'derby', version:'10.5.3.0_1'
+    compile group: 'org.apache.derby', name: 'derbytools', version:'10.5.3.0_1'
+}

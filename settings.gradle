@@ -1,0 +1,6 @@
+rootProject.name = 'jLibre'
+include ':jLibre-core'
+include ':jLibre-app'
+
+project(':jLibre-core').projectDir = "$rootDir/jLibre-core" as File
+project(':jLibre-app').projectDir = "$rootDir/jLibre-app" as File

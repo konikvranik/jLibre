@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_MeJEkHsGEeSMQtD_kF_aTg" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_MeJEkXsGEeSMQtD_kF_aTg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_M2mn4HsGEeSMQtD_kF_aTg" name="Activity1"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_M42DkHsGEeSMQtD_kF_aTg" name="Interaction1"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_M53XQHsGEeSMQtD_kF_aTg" name="Interaction2"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_RCgAkHsGEeSMQtD_kF_aTg" name="book importing">
+    <generalization xmi:type="uml:Generalization" xmi:id="_byjCwHsGEeSMQtD_kF_aTg" general="_RmHD8HsGEeSMQtD_kF_aTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_RVhqQHsGEeSMQtD_kF_aTg" name="updating metadata">
+    <generalization xmi:type="uml:Generalization" xmi:id="_cNLwUHsGEeSMQtD_kF_aTg" general="_RmHD8HsGEeSMQtD_kF_aTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_RmHD8HsGEeSMQtD_kF_aTg" name="book manipulation"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_R2QYwHsGEeSMQtD_kF_aTg" name="book editing">
+    <generalization xmi:type="uml:Generalization" xmi:id="_bUM54HsGEeSMQtD_kF_aTg" general="_RmHD8HsGEeSMQtD_kF_aTg"/>
+  </packagedElement>
+</uml:Model>
