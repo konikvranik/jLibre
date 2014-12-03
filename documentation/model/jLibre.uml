@@ -16,4 +16,17 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_R2QYwHsGEeSMQtD_kF_aTg" name="book editing">
     <generalization xmi:type="uml:Generalization" xmi:id="_bUM54HsGEeSMQtD_kF_aTg" general="_RmHD8HsGEeSMQtD_kF_aTg"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_LuK40HsJEeSMQtD_kF_aTg" name="book import"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_OdygwHsJEeSMQtD_kF_aTg" name="book export"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Su37cHsJEeSMQtD_kF_aTg" name="search"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_UAxoMHsJEeSMQtD_kF_aTg" name="author search">
+    <generalization xmi:type="uml:Generalization" xmi:id="_VjlewHsJEeSMQtD_kF_aTg" general="_Su37cHsJEeSMQtD_kF_aTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_V-DNMHsJEeSMQtD_kF_aTg" name="title search">
+    <generalization xmi:type="uml:Generalization" xmi:id="_XCj-MHsJEeSMQtD_kF_aTg" general="_Su37cHsJEeSMQtD_kF_aTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XY2XQHsJEeSMQtD_kF_aTg" name="collection search">
+    <generalization xmi:type="uml:Generalization" xmi:id="_auF0wHsJEeSMQtD_kF_aTg" general="_Su37cHsJEeSMQtD_kF_aTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_nZ71QHsJEeSMQtD_kF_aTg" name="OPDS catalog"/>
 </uml:Model>
